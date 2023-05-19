@@ -7,14 +7,13 @@ $primary-color: #333
 $black-color: #000
 $black-color-2: #394149
 $white-color: #fff
- 
+
 $animation-duration: 0.3s
 $font-nunito: 'Nunito Sans', sans-serif
 $font-manrope: 'Manrope', sans-serif
 $font-red-hat: 'Red Hat Display', sans-serif
-
 .font-nunito
-  font-family:  $font-nunito
+  font-family: $font-nunito
 
 .font-manrope
   font-family: $font-manrope
@@ -36,6 +35,11 @@ $font-red-hat: 'Red Hat Display', sans-serif
     text-align: center
     margin: 18% auto
 
+@media only screen and (max-width: 540px)
+  .loader
+    .loading-pages
+      margin-top: 66%
+
 .menu-left::-webkit-scrollbar
   width: 4px
   height: 12px
@@ -53,7 +57,7 @@ $font-red-hat: 'Red Hat Display', sans-serif
 body
   font-size: 0.9rem
 
-body, html, a 
+body, html, a
   //font-family: $font-nunito 
   font-family: $font-manrope
 
@@ -64,6 +68,22 @@ a, .page-link
   color: $black-color
   text-decoration: none
 
+// navigator
+.navbar-nav
+  margin: 0 auto
+
+.nav-link, .dropdown-item
+  font-family: $font-manrope
+
+.nav-link
+  font-weight: bold
+
+.dropdown-item
+  font-size: 0.8rem
+
+.dropdown-item.active, .dropdown-item:active
+  background-color: $black-color
+
 .page-link
   font-size: 0.8rem
 
@@ -71,13 +91,13 @@ a, .page-link
   font-family: $font-red-hat
   font-weight: 700
   text-shadow: 1px 1px 1px #333
-  
-.display-6 
+
+.display-6
   font-family: $font-red-hat
   font-weight: 700
 
-@media only screen and (max-width: 540px) 
-  .full-height
+@media only screen and (max-width: 540px)
+  .full-height 
     .slider
       width: 100%
   .slick-multy
@@ -168,12 +188,49 @@ a, .page-link
     font-family: $font-red-hat
 
 .items
-  .items-note
+  position: relative
+  .item-header
+    z-index: 99
+    position: absolute
+    top: 0px
+    left: 0px
+    padding: 10px
+    background: rgb(255,255,255)
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.6) 100%)
+    width: 100%
     opacity: 0
     transition: opacity $animation-duration ease-in-out
-    font-size: 0.8rem
-  &:hover .items-note
+    a
+      font-family: $font-red-hat
+      font-size: 1.2rem
+      color: $white-color
+  &:hover .item-header
     opacity: 0.9
+
+  .item-footer
+    position: absolute
+    bottom: 0px
+    left: 0px
+    padding: 10px
+    background: rgb(255,255,255)
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.6) 100%)
+    width: 100%
+    opacity: 0
+    transition: opacity $animation-duration ease-in-out
+    a
+      font-weight: bold
+      color: $white-color
+  &:hover .item-footer
+    opacity: 0.9
+
+@media only screen and (max-width: 540px)
+  .items
+    .item-header
+      opacity: 1
+      a
+        font-size: 0.9rem
+    .item-footer
+      opacity: 1
 
 .img-zoom
   position: relative
@@ -381,14 +438,12 @@ input[type='search']
     text-align: center
     margin-top: 1rem
 
-.grid-item
-  padding: 1rem
-  .grid-item-note
-    opacity: 0
-    transition: opacity $animation-duration ease-in-out
-    font-size: 0.8rem
-  &:hover .grid-item-note
-    opacity: 0.9
+// END >> PROJECT MASONRY
+@media only screen and (max-width: 540px)
+  .fnCategory
+    display: block
+
+// END >> PROJECT MASONRY
 
 .centerSlide
   max-width: 70vw
@@ -435,5 +490,5 @@ div.table
   text-align: center
   .box
     background: $black-color
-    position: relative 
+    position: relative
     width: auto

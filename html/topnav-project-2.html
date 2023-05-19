@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirrel Photograph Stories - ver 0.1</title>
+    <link rel="stylesheet" href="./../assets/plugin/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./../assets/bootstrap@5.3.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../assets/plugin/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./../assets/plugin/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./../assets/plugin/animate.min.css">
+    <link rel="stylesheet" href="./../assets/plugin/CSS3FullscreenSlideshow/css/style4.css">
+    <link rel="stylesheet" href="./../assets/plugin/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="./../assets/css/sidebars.css">
+    <link rel="stylesheet" href="./../assets/css/slick-custom.css">
+    <link rel="stylesheet" href="./../assets/css/masonry.css">
+    <link rel="stylesheet" href="./../assets/css/style.css">
+    <link rel="stylesheet" href="./../assets/css/home2.css">
+    <link rel="stylesheet" href="./../assets/css/offcanvas-navbar.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- BEGIN :: JUST FOR LOADING BEFORE LOAD -->
+    <div id="loader" class="loader">
+        <div class="loading-pages">
+            <img src="./../assets/img/logoipsum-212.svg" width="200" alt="Logo">
+            <div>
+                <img src="./../assets/img/icons8-loading-infinity.gif" alt="loading">
+            </div>
+        </div>
+    </div>
+    <!-- END :: LOADING-->
+
+
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-white " aria-label="Main navigation">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="./"><img src="./../assets/img/logoipsum-212.svg" class="w-100" alt="Logo"></a>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./home-1.html">Home 1 - Slider</a></li>
+                            <li><a class="dropdown-item" href="./home-2.html">home 2 - Full Height</a></li>
+                            <li><a class="dropdown-item" href="./home-3.html">Home 3 - Static</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Project</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./project-1.html">Project Grid View</a></li>
+                            <li><a class="dropdown-item" href="./project-2.html">Project Full Images</a></li>
+                            <li><a class="dropdown-item" href="./project-3.html">Project Masonry</a></li>
+                            <li><a class="dropdown-item" href="./project-detail-1.html">Project Detail 1 - Simple</a></li>
+                            <li><a class="dropdown-item" href="./project-detail-2.html">Project Detail 2 - Stories</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Blogs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./blogs-1.html">Blogs Full Futures </a></li>
+                            <li><a class="dropdown-item" href="./blogs-2.html">Blogs Full Futures + Masonry</a></li>
+                            <li><a class="dropdown-item" href="./blogs-3.html">Blogs Simple </a></li>
+                            <li><a class="dropdown-item" href="./blog-detail-1.html">Blog Detail</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item  ">
+                        <a class="nav-link px-3" href="./about.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Top Navigator</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./topnav-project-1.html">Demo 1 </a></li>
+                            <li><a class="dropdown-item" href="./topnav-project-2.html">Demo 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item  ">
+                        <a class="nav-link px-3" href="./typography.html">Typography</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="text-center mt-3">
+                    <button class="mx-1 mb-1 fnCategory btn btn-sm btn-outline-dark" data-id="1"> Category 1 </button>
+                    <button class="mx-1 mb-1 fnCategory btn btn-sm btn-outline-dark" data-id="2"> Category 2 </button>
+                    <button class="mx-1 mb-1 fnCategory btn btn-sm btn-outline-dark" data-id="3"> Category 3 </button>
+                    <button class="mx-1 mb-1 fnCategory btn btn-sm btn-dark" data-id="*"> Show All </button>
+
+                </div>
+            </div>
+            <div class="col-12">
+
+                <div class="py-2">
+                    <div class="grid ">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/121/900/500" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/122/900/1000" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_1 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/123/900/1100" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 1</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/124/900/1200" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/125/900/1100" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_1 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/126/900/600" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 1</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/127/900/700" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_1 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/128/900/600" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 1</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/129/900/1200" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/130/900/600" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/131/900/800" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/132/900/900" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/133/900/800" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/134/900/1200" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/135/900/800" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/136/900/1100" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_1 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/137/900/1200" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 1</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/138/900/1000" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/139/900/1200" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_1 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/140/900/1200" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 1</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/141/900/800" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/142/900/500" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/143/900/600" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/144/900/1200" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/145/900/600" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/146/900/600" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_1 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/147/900/800" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 1</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/148/900/900" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_1 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/149/900/1200" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 1</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/150/900/600" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_1 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/151/900/600" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 1</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/152/900/1000" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/153/900/1000" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_2 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/154/900/600" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 2</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_1 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/155/900/1200" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 1</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/156/900/1000" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                        <div class="grid-item category_3 allCategory">
+                            <div class="items m-3 rounded">
+                                <div class="item-header rounded-top">
+                                    <a href="">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </a>
+                                </div>
+                                <a href="">
+                                    <img src="https://picsum.photos/id/157/900/700" class="w-100 rounded item-img" alt="dummy images">
+                                </a>
+                                <div class="item-footer rounded-bottom">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <a href="">Category 3</a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <a href="" class="btn btn-sm btn-success p-1">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- end .grid-item -->
+
+                    </div>
+                </div>
+            </div> <!-- end col-md-10 col-12 -->
+
+        </div>
+
+    </div> <!-- end .container-fluid -->
+
+    <script src="./../assets/plugin/jquery.min.js"></script>
+    <script src="./../assets/bootstrap@5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="./../assets/plugin/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./../assets/plugin/masonry-layout/dist/masonry.pkgd.min.js"></script>
+    <script src="./../assets/plugin/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./../assets/plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="./../assets/js/offcanvas-navbar.js"></script>
+    <script src="./../assets/js/app.js"> </script>
+    <script src="http://localhost:35729/livereload.js"></script>
+</body>
+
+</html>

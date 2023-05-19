@@ -29,6 +29,11 @@
   margin: 18% auto;
 }
 
+@media only screen and (max-width: 540px) {
+  .loader .loading-pages {
+    margin-top: 66%;
+  }
+}
 .menu-left::-webkit-scrollbar {
   width: 4px;
   height: 12px;
@@ -62,6 +67,26 @@ strong {
 a, .page-link {
   color: #000;
   text-decoration: none;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-link, .dropdown-item {
+  font-family: "Manrope", sans-serif;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.dropdown-item {
+  font-size: 0.8rem;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #000;
 }
 
 .page-link {
@@ -183,15 +208,59 @@ a, .page-link {
   font-family: "Red Hat Display", sans-serif;
 }
 
-.items .items-note {
+.items {
+  position: relative;
+}
+.items .item-header {
+  z-index: 99;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  width: 100%;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  font-size: 0.8rem;
 }
-.items:hover .items-note {
+.items .item-header a {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.items:hover .item-header {
+  opacity: 0.9;
+}
+.items .item-footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.items .item-footer a {
+  font-weight: bold;
+  color: #fff;
+}
+.items:hover .item-footer {
   opacity: 0.9;
 }
 
+@media only screen and (max-width: 540px) {
+  .items .item-header {
+    opacity: 1;
+  }
+  .items .item-header a {
+    font-size: 0.9rem;
+  }
+  .items .item-footer {
+    opacity: 1;
+  }
+}
 .img-zoom {
   position: relative;
   background: #000;
@@ -432,18 +501,11 @@ input[type=search]:focus {
   margin-top: 1rem;
 }
 
-.grid-item {
-  padding: 1rem;
+@media only screen and (max-width: 540px) {
+  .fnCategory {
+    display: block;
+  }
 }
-.grid-item .grid-item-note {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  font-size: 0.8rem;
-}
-.grid-item:hover .grid-item-note {
-  opacity: 0.9;
-}
-
 .centerSlide {
   max-width: 70vw;
 }
